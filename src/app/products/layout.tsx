@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import './globals.scss'
+// import { Inter } from "next/font/google";
+
+// const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "Dapper Shooz",
   description: "Dapper Shooz - Shoes eCommerce Website",
@@ -11,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <section>
+      {children}
+    </section>
   );
 }
